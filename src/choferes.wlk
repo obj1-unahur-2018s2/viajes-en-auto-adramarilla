@@ -24,7 +24,20 @@ object mariela {
 
 //cobra $100 cada 8km, y $200 si son mas de 8km. Sin importar los que se pacto con la agencia
 object juana {
-//	method precioViaje(cliente, kms) { 
-//		return (cliente.precioPactadoPorKm() * kms) * 1.2 
-//	}
+	method precioViaje(cliente, kms) {
+		(if (kms < 8) { return 100 } else { return 200})
+	}
+
 }
+
+object lucia {
+
+	var choferReemplazado = null
+			method reemplazo(chofer) {
+				choferReemplazado = chofer
+			}
+	method precioViaje(cliente, kms) {
+		return choferReemplazado.precioViaje(cliente,kms)
+	}
+}
+

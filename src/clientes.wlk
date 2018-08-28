@@ -16,3 +16,15 @@ object teresa {
 		return 22
 	}
 }
+
+object melina {
+	var _paraCliente = null
+	
+	method trabajaPara (cliente){
+		_paraCliente = cliente
+	}
+	
+	method precioPactadoPorKm (){
+		return (_paraCliente.precioPactadoPorKm()) - 3
+	} 
+}
