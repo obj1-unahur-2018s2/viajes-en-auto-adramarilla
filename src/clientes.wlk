@@ -1,5 +1,11 @@
 
-object ludmila {
+class Clientes {
+	const precio 
+		method precioPactadoPorKm () { return 18}
+	
+}
+	
+/*object ludmila {
 	method precioPactadoPorKm () { 
 		return 18
 	}
@@ -27,4 +33,4 @@ object melina {
 	method precioPactadoPorKm (){
 		return (_paraCliente.precioPactadoPorKm()) - 3
 	} 
-}
+}*/
